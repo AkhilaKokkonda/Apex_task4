@@ -1,0 +1,247 @@
+/* ===== Dark Elegant FoodHub Theme ===== */
+body {
+  background-color: #0a0a0a;
+  color: #f5f5f5;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background: #111;
+  color: #00ff88;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 15px #00ff88;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #00ff88;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+h2 {
+  color: #00ff88;
+  text-align: center;
+}
+
+.tagline {
+  text-align: center;
+  color: #aaa;
+}
+
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.food-card {
+  background: #161616;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,255,136,0.2);
+  transition: transform 0.3s;
+}
+
+.food-card:hover {
+  transform: scale(1.05);
+}
+
+.food-card img {
+  width: 100%;
+  border-radius: 12px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.price {
+  color: #00ff88;
+  font-weight: bold;
+}
+
+.btn-order {
+  background: #00ff88;
+  color: #000;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-order:hover {
+  background: #00ffaa;
+}
+
+.form-container {
+  max-width: 400px;
+  background: #161616;
+  padding: 25px;
+  margin: 70px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,255,136,0.3);
+}
+
+.form-container input,
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+}
+
+.form-container input {
+  background: #222;
+  color: #fff;
+}
+
+.form-container button {
+  background: #00ff88;
+  color: #000;
+  font-weight: bold;
+}
+
+.order-item {
+  background: #161616;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cancel-btn {
+  background: crimson;
+  border: none;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cancel-btn:hover {
+  background: red;
+}
+
+.footer {
+  background: #111;
+  color: #777;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+  border-top: 1px solid #00ff88;
+}
+
+.pending { color: orange; }
+.cancelled { color: crimson; }
+.completed { color: #00ff88; }
+
+
+/* ===== Admin Panel Dark Theme ===== */
+body.dark {
+  background-color: #121212;
+  color: #eee;
+}
+
+.container {
+  background: #1e1e1e;
+  border-radius: 10px;
+  padding: 30px;
+  margin-top: 40px;
+}
+
+.navbar {
+  background-color: #222;
+  color: #fff;
+}
+
+.navbar a {
+  color: #ddd;
+}
+
+.navbar a:hover {
+  color: #ff9800;
+}
+
+.stats-grid {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.stat-card {
+  background: #292929;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  flex: 1;
+  margin: 0 10px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.05);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #292929;
+  border-radius: 10px;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #444;
+  text-align: left;
+}
+
+th {
+  background: #333;
+  color: #ff9800;
+}
+
+.btn {
+  padding: 6px 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.btn.success {
+  background-color: #4caf50;
+}
+
+.btn.danger {
+  background-color: #f44336;
+}
+
+.error {
+  color: #ff4444;
+  margin-top: 10px;
+}
